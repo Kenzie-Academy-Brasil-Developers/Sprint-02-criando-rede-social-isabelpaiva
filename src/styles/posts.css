@@ -1,0 +1,100 @@
+.lista-posts{
+    padding: 18px;
+    list-style: none;
+   
+}
+
+.title-posts{
+    margin-top: 20px;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+.button-open-post{
+   color: var(--whiteFixed) ;
+   background-color: var(--grey1);
+   border: 2px solid var(--grey1);
+   padding: 5px;
+   font-weight: bold;
+   border-radius: 4px;
+   margin-top: 25px;
+}
+
+.nameId{
+    font-size: 28px;
+    padding: 2px;
+}
+
+.textId{
+    color: var(--grey2);
+    line-height:  22px;
+}
+
+.icon-favorito{
+    width: 18px;
+    height: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+@media(min-width: 700px){
+    
+    .ulPost{
+        margin-left: 20px;
+        width: 50%;
+        line-height: 40px;
+    }
+
+    .textId{
+        margin-top: 20px;
+        line-height: 30px ;
+        text-align: justify;
+    }
+
+    .nameId{
+        
+    }
+
+
+}
+
+/* @media(min-width: 1100px){
+
+    .ulPost{
+        margin-left: 20px;
+        width: 850px;
+        line-height: 40px;
+    }
+
+    .textId{
+        margin-top: 20px;
+        line-height: 30px ;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .nameId{
+        width: 50%;
+    }
+} */
+/* 
+@media(min-width: 1100px){
+
+
+    .ulPost{
+        margin-left: 20px;
+        width: 850px;
+        line-height: 40px;
+    }
+
+    .textId{
+        margin-top: 20px;
+        line-height: 30px ;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .nameId{
+        width: 100%;
+    }
+} */

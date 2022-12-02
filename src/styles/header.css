@@ -1,0 +1,27 @@
+.menu-nav{
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    font-family: 'Inter' , sans-serif;
+    justify-content: space-between;
+    background-color: var(--grey1);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    
+}
+
+.button-sair{
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    color: var(--whiteFixed)
+}
+
+.tituloPrincipal{
+    width: 130px;
+    justify-content: left;
+   
+}

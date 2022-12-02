@@ -23,3 +23,41 @@ const posts = [
     text: "A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.",
   },
 ];
+
+function criarCardPostFeed(posts){
+
+  let divContainer = document.querySelector('.container-div')
+  let ulPost = document.createElement('ul')
+  ulPost.classList.add('ulPost')
+  divContainer.append(ulPost)
+
+  for (let i = 0; i < posts.length; i++){
+
+      let liPost = document.createElement('li')
+      liPost.classList.add('lista-posts')
+      ulPost.appendChild(liPost)
+
+      let nameId = document.createElement('h4')
+      nameId.classList.add('nameId')
+      liPost.appendChild(nameId)
+      nameId.innerText = posts[i].title
+
+      let textId = document.createElement('p')
+      textId.classList.add('textId')
+      liPost.appendChild(textId)
+      textId.innerText = posts[i].text
+
+      let buttonOpenPost = document.createElement('button')
+      buttonOpenPost.classList.add('button-open-post')
+      buttonOpenPost.innerText = 'Abrir post'
+      liPost.appendChild(buttonOpenPost)
+
+      let iconFavorito = document.createElement('img')
+      iconFavorito.classList.add('icon-favorito')
+      iconFavorito.src = '/src/assets/img/Vector.png'
+        liPost.appendChild(iconFavorito)
+
+  }
+
+}
+criarCardPostFeed(posts)

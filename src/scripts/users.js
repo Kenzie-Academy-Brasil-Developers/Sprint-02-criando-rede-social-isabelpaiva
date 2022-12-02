@@ -8,7 +8,7 @@ const users = [
   },
   {
     id: 2,
-    user: "Samuel Persuhn",
+    user: "Leandro Persuhn",
     stack: "Front end Engineer",
     img: "./src/assets/img/user2.svg",
   },
@@ -33,11 +33,13 @@ const users = [
   {
     id: 6,
     user: "Filipe Gutierry",
+    stack: "Back end Engineer",
     img: "./src/assets/img/user7.svg",
   },
   {
     id: 7,
     user: "Samuel Persuhn",
-    img: "./src/assets/img/user6.svg",
+    stack: "Back end Engineer",
+    img: "./src/assets/img/user2.svg",
   },
 ];
