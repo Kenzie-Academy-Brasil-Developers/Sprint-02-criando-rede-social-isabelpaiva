@@ -22,10 +22,11 @@ function renderModal() {
 renderModal()
 
 function createModal(id){
+    const modalClose = document.createElement('button')
     const modalContainer = document.createElement('div')
     const modalTitle = document.createElement('h2')
     const modalDescription = document.createElement('p')
-    const modalClose = document.createElement('button')
+ 
 
     let element = []
 
@@ -45,7 +46,7 @@ function createModal(id){
     modalDescription.innerText = element.text
     modalDescription.classList.add('modal__description')
   
-    modalClose.innerText = 'Ver Menos'
+    modalClose.innerText = 'X'
     modalClose.classList.add('modal__btn')
 
     modalContainer.append(modalTitle, modalDescription, modalClose)
