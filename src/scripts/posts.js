@@ -24,14 +24,14 @@ const posts = [
   },
 ];
 
-function criarCardPostFeed(posts){
+function criarCardPostFeed(element){
 
   let divContainer = document.querySelector('.container-div')
   let ulPost = document.createElement('ul')
   ulPost.classList.add('ulPost')
   divContainer.append(ulPost)
 
-  for (let i = 0; i < posts.length; i++){
+  for (let i = 0; i < element.length; i++){
 
       let liPost = document.createElement('li')
       liPost.classList.add('lista-posts')
@@ -40,17 +40,18 @@ function criarCardPostFeed(posts){
       let nameId = document.createElement('h4')
       nameId.classList.add('nameId')
       liPost.appendChild(nameId)
-      nameId.innerText = posts[i].title
+      nameId.innerText = element[i].title
 
       let textId = document.createElement('p')
       textId.classList.add('textId')
       liPost.appendChild(textId)
-      textId.innerText = posts[i].text
+      textId.innerText = element[i].text
 
       let buttonOpenPost = document.createElement('button')
       buttonOpenPost.classList.add('button-open-post')
       buttonOpenPost.innerText = 'Abrir post'
       liPost.appendChild(buttonOpenPost)
+      buttonOpenPost.dataset.id = element[i].id_post
 
       let iconFavorito = document.createElement('img')
       iconFavorito.classList.add('icon-favorito')

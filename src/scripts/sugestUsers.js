@@ -20,7 +20,6 @@ function criarCardSugestUsers(user){
         img.src = user.img
         li.appendChild(img)
         img.classList.add('imgUsuario')
-        console.log(img)
 
         let div = document.createElement('div')
         div.classList.add('div-card')

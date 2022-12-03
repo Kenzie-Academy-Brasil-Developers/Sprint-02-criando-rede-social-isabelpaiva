@@ -1,0 +1,30 @@
+.modal__container{
+    top: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.div__modal{
+  
+}
+
+.modal__title{
+ margin-top: 6%;
+}
+
+.modal__btn{
+
+}
+
+.modal__description{
+    margin-top: 10%;
+    line-height: 40px;
+
+}
+.modal__container::backdrop {
+  background-color: rgba(33, 37, 41, 0.5);
+}

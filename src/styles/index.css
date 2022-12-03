@@ -76,7 +76,7 @@ img {
 
 .postButton {
     display: flex;
-    margin-left: 280px;
+    margin-left: 95%;
     margin-top: 10px;
 }
 
@@ -101,12 +101,13 @@ img {
 .lista-sugest{
     position: relative;
     margin: 10px;
+    margin-left: 15px;
     display: flex;
     gap: 20px;
     padding: 20px;
     height: 80px;
     min-width: 200px;
-    border-radius: 10px;
+  
 }
 
 .titleSugest{
@@ -121,7 +122,6 @@ img {
 .ul-sugest{
     z-index: 0;
     flex-direction: row;
-    margin: 2px;
     display: flex;
     overflow-x: auto;
     gap: 2px;
@@ -152,10 +152,14 @@ img {
 @media(min-width: 700px){
 
     .sugestSec{
-        position: absolute;
-        right: 50px;
-        top: 50px;  
+        position: sticky;
+        right: 20px;
+        top: 100px; 
         position: fixed;
+    }
+
+    .btn-card{
+        
     }
 
     .ul-sugest{
@@ -172,7 +176,7 @@ img {
 
     .postButton {
         display: flex;
-        margin-left: 42%;
+        margin-left: 46%;
         margin-top: 10px;
     }
 
