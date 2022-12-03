@@ -11,7 +11,7 @@ function renderModal() {
       button.addEventListener('click', () => {
         const modalContent = createModal(button.dataset.id)
 
-        modal.innerHTML = ''
+        modal.innerHTML = ' '
         modal.appendChild(modalContent)
         modal.showModal()
         closeModal()
@@ -28,7 +28,7 @@ function createModal(id){
     const modalDescription = document.createElement('p')
  
 
-    let element = []
+    let element = {}
 
     console.log(id)
 
