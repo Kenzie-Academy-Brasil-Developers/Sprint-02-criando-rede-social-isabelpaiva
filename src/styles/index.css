@@ -43,22 +43,19 @@ img {
 
 .description-user__div{
     color: var(--grey2);
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    padding-top: 10px;
+   
 }
 
 
 /* INPUT CRIAR POST */
 
 .createPost > form{
-    padding: 20px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: -60px;
-  
+    margin-top: -95px;
+   
 }
 
 .createPost form > input {
@@ -85,6 +82,7 @@ img {
     height: 36px;
     width: 60px;
     background-color: var(--grey4);
+    margin-bottom: 30px;
 
 }
 
@@ -109,7 +107,7 @@ img {
 .lista-sugest{
     position: relative;
     margin: 10px;
-    margin-left: 15px;
+    margin-left: 1px;
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -119,10 +117,9 @@ img {
 }
 
 .titleSugest{
-    margin-left: 15px;
     font-size: 20px;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 8px;
+   
 }
 
 .nomeUsuario{
@@ -187,7 +184,7 @@ border: 2px solid  var(--brand-1);
 
 
 
-@media(min-width: 481px){
+@media(min-width: 480px){
 
     .sugestSec{
         position: sticky;
@@ -196,25 +193,31 @@ border: 2px solid  var(--brand-1);
         position: fixed;
     }
 
-    .btn-card{
-        
-    }
-
     .ul-sugest{
         flex-direction: column;
+        z-index: 0;
+        flex-direction: row;
+        display: flex;
+        overflow-x: auto;
+        margin: 10px;
+        margin-left: 15px;
+        width: 100%;
+        gap: 2px;
     }
     
     .createPost form > input{
         width: 49%;
+        margin-left: 1%;
     }
 
     .createPost form > textarea{
         width: 49%;
+        margin-left: 1%;
     }
 
     .postButton {
         display: flex;
-        margin-left: 47%;
+       justify-content: center;
         margin-top: 10px;
     }
 
@@ -224,4 +227,45 @@ border: 2px solid  var(--brand-1);
     }
 
  
+}
+
+@media (min-width: 481px){
+
+    .sugestSec{
+        position: inherit;
+        right: 20px;
+        top: 100px; 
+        position: inherit;flex-direction: column;
+    }
+
+    .createPost form > input{
+        width: 55%;
+        margin-left: 1%;
+    }
+
+    .createPost form > textarea{
+        width: 55%;
+        margin-left: 1%;
+    }
+
+    .postButton {
+        display: flex;
+        margin-top: 10px;
+    }
+
+
+  
+}
+
+@media (min-width: 768px){
+    .sugestSec{
+        position: sticky;
+        right: 20px;
+        top: 100px; 
+        position: fixed; 
+    }
+
+    .ul-sugest{
+        flex-direction: column;
+    }
 }

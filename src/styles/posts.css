@@ -6,8 +6,7 @@
 
 .title-posts{
     margin-top: 20px;
-    padding: 5px;
-    margin-left: 35px;
+    padding: 20px;
     font-size: 28px;
 }
 
@@ -48,7 +47,6 @@
 @media(min-width: 700px){
     
     .ulPost{
-        margin-left: 20px;
         width: 50%;
         line-height: 40px;
     }
