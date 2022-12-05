@@ -39,17 +39,14 @@
 }
 
 
-@media(min-width: 700px){
+@media(min-width: 481px){
 
     .modal__container{
-     
+     height: 55%;
       width: 65%;
       margin-top: 3%;
     }
-    
-    .div__modal{
-    }
-    
+
     .modal__title{
         padding: 5%;
  
@@ -65,7 +62,34 @@
        
 
     }
-    .modal__container::backdrop {
-    
-    }
+
+}
+
+
+@media(min-width: 1279px){
+
+    .modal__container{
+        width: 50%;
+        height: 55%;
+        margin-top: 3%;
+      }
+      
+      .div__modal{
+      }
+      
+      .modal__title{
+          padding: 5%;
+   
+      }
+      
+      .modal__btn{
+          bottom: 92%; 
+      }
+      
+      .modal__description{
+          padding: 5%;
+         line-height: 35px;
+         
+  
+      }
 }

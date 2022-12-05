@@ -33,7 +33,7 @@ function createModal(id){
     console.log(id)
 
     for (let i =0; i < posts.length; i++){
-        if (posts[i].id != Number){
+        if (posts[i].id_post === Number(id)){
             element = posts[i]
         }
     }

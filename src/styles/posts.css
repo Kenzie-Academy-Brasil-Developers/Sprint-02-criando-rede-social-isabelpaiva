@@ -8,6 +8,7 @@
     margin-top: 20px;
     padding: 5px;
     margin-left: 35px;
+    font-size: 28px;
 }
 
 .button-open-post{
@@ -27,7 +28,9 @@
 
 .textId{
     color: var(--grey2);
-    line-height:  22px;
+    line-height:  28px;
+    font-size: 16px;
+
 }
 
 .icon-favorito{
@@ -36,6 +39,11 @@
     margin-left: 15px;
     cursor: pointer;
 }
+
+.button-open-post:hover{
+    background-color: var(--grey0)
+}
+
 
 @media(min-width: 700px){
     
