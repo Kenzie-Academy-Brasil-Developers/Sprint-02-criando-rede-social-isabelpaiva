@@ -4,6 +4,26 @@
    
 }
 
+.divUser{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.userPhoto{
+
+}
+
+.nameUser{
+ font-weight: 600;
+ font-size: 20px;
+}
+
+.stackUser{
+   font-size: 14px;
+   color: var(--grey2)
+}
+
 .title-posts{
     margin-top: 20px;
     padding: 20px;
