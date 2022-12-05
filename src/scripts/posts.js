@@ -24,7 +24,7 @@ const posts = [
   },
 ];
 
-function criarCardPostFeed(element){
+function criarCardPostFeed(element, id){
 
   let divContainer = document.querySelector('.container-div')
   let ulPost = document.createElement('ul')
