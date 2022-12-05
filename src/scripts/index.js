@@ -27,16 +27,20 @@ function criarCardPostFeed(element){
           userPhoto.src = users[j].img
           userPhoto.classList.add('userPhoto')
           
+          let divUsuario = document.createElement('div')
+          divUsuario.classList.add('divUsuario')
+          divUser.appendChild(divUsuario)
 
           let nameUser = document.createElement('p')
-          divUser.appendChild(nameUser)
+          divUsuario.appendChild(nameUser)
           nameUser.innerText = users[j].user
           nameUser.classList.add('nameUser')
 
           let stackUser = document.createElement('p')
-          divUser.appendChild(stackUser)
+          divUsuario.appendChild(stackUser)
           stackUser.innerText = users[j].stack
           stackUser.classList.add('stackUser')
+
 
           
         }
@@ -58,6 +62,10 @@ function criarCardPostFeed(element){
       buttonOpenPost.innerText = 'Abrir post'
       liPost.appendChild(buttonOpenPost)
       buttonOpenPost.dataset.id = element[i].id_post
+
+      buttonOpenPost.id = element[i].user
+
+
 
       let iconFavorito = document.createElement('img')
       iconFavorito.classList.add('icon-favorito')

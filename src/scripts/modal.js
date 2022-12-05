@@ -26,11 +26,10 @@ function createModal(id){
     const modalContainer = document.createElement('div')
     const modalTitle = document.createElement('h2')
     const modalDescription = document.createElement('p')
+    
  
 
     let element = {}
-
-    console.log(id)
 
     for (let i =0; i < posts.length; i++){
         if (posts[i].id_post === Number(id)){
@@ -50,9 +49,6 @@ function createModal(id){
     modalClose.classList.add('modal__btn')
 
     modalContainer.append(modalTitle, modalDescription, modalClose)
-
-    console.log(modalTitle)
-    console.log(element)
 
     return modalContainer
 }

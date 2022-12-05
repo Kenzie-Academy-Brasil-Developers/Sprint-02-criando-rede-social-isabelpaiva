@@ -5,24 +5,28 @@
 }
 
 .divUser{
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+   
     
 }
 
 .userPhoto{
-
+    width: 80px;  
 }
 
 .nameUser{
  font-weight: 600;
  font-size: 20px;
+
 }
 
 .stackUser{
    font-size: 14px;
-   color: var(--grey2)
+   color: var(--grey2);
 }
+
+
 
 .title-posts{
     margin-top: 20px;
